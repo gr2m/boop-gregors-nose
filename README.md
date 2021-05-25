@@ -6,7 +6,11 @@
 
 [![boop](https://media.giphy.com/media/SYLvjCEtBClsS2QePl/giphy.gif)](https://giphy.com/gifs/boop-snoot-the-SYLvjCEtBClsS2QePl/media)
 
-You can boop my nose by running `npx boop-gregors-nose`.
+You can boop my nose by running
+
+```
+npx boop-gregors-nose
+```
 
 If you have write access to this repository, it will bump the counter directly. Otherwise it will create an issue and I'll boop the nose for you :)
 
