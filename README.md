@@ -11,7 +11,6 @@ There are two ways to boop my nose
 1. Run the CLI (requires node 14.8+, install at [nodejs.org](https://nodejs.org/))
 
    ```
-   # requires node 14.8+ ()
    npx boop-gregors-nose
    ```
 
