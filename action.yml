@@ -1,0 +1,12 @@
+name: Boop
+description: "Bumps Gregor's nose boop counter on https://github.com/gr2m/boop-gregors-nose#readme"
+branding:
+  icon: "plus-circle"
+  color: purple
+inputs:
+  personal-access-token:
+    description: "Create at https://github.com/settings/tokens/new?scopes=public_repo&description=boop%20token"
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
