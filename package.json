@@ -1,0 +1,19 @@
+{
+  "name": "boop-gregors-nose",
+  "version": "1.0.0-alpha.1",
+  "type": "module",
+  "description": "CLI to boop Gregor's nose",
+  "bin": "cli.js",
+  "repository": "github:gr2m/boop-gregors-nose",
+  "keywords": [
+    "octokit",
+    "cli"
+  ],
+  "author": "Gregor Martynus (https://twitter.com/gr2m)",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-oauth-device": "^3.1.1",
+    "@octokit/plugin-create-or-update-text-file": "^1.0.0",
+    "octokit": "^1.0.5"
+  }
+}
