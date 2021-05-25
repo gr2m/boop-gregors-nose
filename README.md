@@ -9,6 +9,7 @@
 You can boop my nose by running
 
 ```
+# requires node 14.8+ (https://nodejs.org/)
 npx boop-gregors-nose
 ```
 
