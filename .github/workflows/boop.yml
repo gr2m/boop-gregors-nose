@@ -14,4 +14,6 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
-      - run: node cli.js
+      - run: node action.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
