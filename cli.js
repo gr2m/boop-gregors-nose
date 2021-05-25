@@ -19,8 +19,9 @@ const MyOctokit = Octokit.plugin(createOrUpdateTextFile).defaults({
 const octokit = new MyOctokit({
   authStrategy: createOAuthDeviceAuth,
   auth: {
-    clientType: "oauth-app",
-    clientId: "9e8dc3c8bf90dce4c361",
+    clientType: "github-app",
+    // Client ID for https://github.com/apps/gregor-s-nose-booper
+    clientId: "Iv1.9b0bb6178e20d3f4",
     scopes: ["public_repo"],
     onVerification(verification) {
       // verification example
