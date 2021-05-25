@@ -1,19 +1,25 @@
 # boop-gregors-nose
 
-> CLI to boop my nose
+> CLI and GitHub Action to boop my nose
 
 ## I have been booped on the nose <!-- boop-counter -->8<!-- /boop-counter --> times.
 
 [![boop](https://media.giphy.com/media/SYLvjCEtBClsS2QePl/giphy.gif)](https://giphy.com/gifs/boop-snoot-the-SYLvjCEtBClsS2QePl/media)
 
-You can boop my nose by running
+There are two ways to boop my nose
 
-```
-# requires node 14.8+ (https://nodejs.org/)
-npx boop-gregors-nose
-```
+1. Run the CLI (requires node 14.8+, install at [nodejs.org](https://nodejs.org/))
 
-If you have write access to this repository, it will bump the counter directly. Otherwise it will create an issue and I'll boop the nose for you :)
+   ```
+   # requires node 14.8+ ()
+   npx boop-gregors-nose
+   ```
+
+   If you have write access to this repository, it will bump the counter directly. Otherwise it will create an issue and I'll boop the nose for you :)
+
+2. Just create an issue in this repository. The [Boop GitHub Action](.github/workflows/boop.yml) bumps the counter for each new issue.
+
+Happy booping 🐶👈
 
 ## Credits
 
