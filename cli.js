@@ -2,17 +2,11 @@
 
 const { Octokit } = require("octokit");
 const { createOAuthDeviceAuth } = require("@octokit/auth-oauth-device");
-const {
-  createOrUpdateTextFile,
-} = require("@octokit/plugin-create-or-update-text-file");
 
-const { bumpBoopCounter } = require("./lib/bump-boop-counter.js");
-
-const owner = "gr2m";
-const repo = "boop-gregors-nose";
+const { boopGregorsNose } = require("./lib/octokit-plugin-boop-gregors-nose");
 
 // register plugin and set default for user agent
-const MyOctokit = Octokit.plugin(createOrUpdateTextFile).defaults({
+const MyOctokit = Octokit.plugin(boopGregorsNose).defaults({
   userAgent: "gregors-nose-booper",
 });
 
@@ -45,32 +39,5 @@ async function run() {
     // auth: process.env.GITHUB_TOKEN,
   });
 
-  try {
-    // try to update the README directly.
-    await octokit.createOrUpdateTextFile({
-      owner,
-      repo,
-      path: "README.md",
-      message: "BOOP",
-      content: ({ content }) => {
-        return bumpBoopCounter(content);
-      },
-    });
-
-    console.log(`you done been booped`);
-  } catch (error) {
-    // if it fails, try to create an issue
-    const { data: issue } = await octokit
-      .request("POST /repos/{owner}/{repo}/issues", {
-        owner,
-        repo,
-        title: "plz to boop",
-        body: "I bestow upon you my finest of boops",
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-
-    console.log(`issue created at ${issue.html_url}`);
-  }
+  await octokit.boopGregorsNose();
 }
