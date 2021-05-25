@@ -1,6 +1,6 @@
 {
   "name": "boop-gregors-nose",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "CLI to boop Gregor's nose",
   "bin": "cli.js",
   "repository": "github:gr2m/boop-gregors-nose",
