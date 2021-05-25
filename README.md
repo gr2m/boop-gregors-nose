@@ -17,7 +17,7 @@ There are two ways to boop my nose
 
    If you have write access to this repository, it will bump the counter directly. Otherwise it will create an issue and I'll boop the nose for you :)
 
-2. Just create an issue in this repository. The [Boop GitHub Action](.github/workflows/boop.js) bumps the counter for each new issue.
+2. Just create an issue in this repository. The [Boop GitHub Action](.github/workflows/boop.yml) bumps the counter for each new issue.
 
 Happy booping 🐶👈
 
