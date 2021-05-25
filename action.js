@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const { Octokit } = require("octokit");
+const core = require("@actions/core");
 
 const { boopGregorsNose } = require("./lib/octokit-plugin-boop-gregors-nose");
 
@@ -15,7 +16,7 @@ async function run() {
   // instantiate `octokit` with the OAuth Device authentication strategy and
   // credentials for an OAuth app
   const octokit = new MyOctokit({
-    auth: process.env.GITHUB_TOKEN,
+    auth: core.getInput("personal-access-token"),
   });
 
   await octokit.boopGregorsNose();

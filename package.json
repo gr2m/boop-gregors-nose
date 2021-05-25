@@ -15,6 +15,7 @@
   "author": "Gregor Martynus (https://twitter.com/gr2m)",
   "license": "ISC",
   "dependencies": {
+    "@actions/core": "^1.3.0",
     "@octokit/auth-oauth-device": "^3.1.1",
     "@octokit/plugin-create-or-update-text-file": "^1.0.0",
     "@vercel/ncc": "^0.28.5",
