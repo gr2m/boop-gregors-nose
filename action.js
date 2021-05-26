@@ -16,7 +16,7 @@ async function run() {
   // instantiate `octokit` with the OAuth Device authentication strategy and
   // credentials for an OAuth app
   const octokit = new MyOctokit({
-    auth: core.getInput("personal-access-token"),
+    auth: process.env.GITHUB_TOKEN || core.getInput("personal-access-token"),
   });
 
   await octokit.boopGregorsNose();
