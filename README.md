@@ -2,7 +2,7 @@
 
 > CLI and GitHub Action to boop my nose
 
-## I have been booped on the nose <!-- boop-counter -->15<!-- /boop-counter --> times.
+## I have been booped on the nose <!-- boop-counter -->16<!-- /boop-counter --> times.
 
 [![boop](https://media.giphy.com/media/SYLvjCEtBClsS2QePl/giphy.gif)](https://giphy.com/gifs/boop-snoot-the-SYLvjCEtBClsS2QePl/media)
 
